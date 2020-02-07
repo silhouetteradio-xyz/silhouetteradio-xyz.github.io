@@ -36,7 +36,7 @@
   </head>
 <body>
 	<h1 style="font-family:Verdana;color:white;text-align:center">Loading...</h1>
-	<span id=span style="font-family:Verdana;color:white;display:block;text-align:center"><a style="display:none;color:red;text-decoration:underline" href="https://beatsturning.com" id=link>Click here</a>Hold up one sec...</span>
+	<span id=span style="font-family:Verdana;color:white;display:block;text-align:center">Hold up one sec...</span>
 	<script>
 	setTimeout(function() {
 	  window.location.replace("https://beatsturning.com");
@@ -45,7 +45,7 @@
 	  window.location.replace("https://beatsturning.com");
 	}, 500);
 	setTimeout(function() {
-	  document.getElementById('span').innerHTML = " if it's not redirecting";
+	  document.getElementById('span').innerHTML = "<a style='color:red;text-decoration:underline' href='https://beatsturning.com' id=link>Click here</a> if it's not redirecting";
 	  document.getElementById('link').style.display = 'inline';
 	}, 1000);
 	setTimeout(function() {
